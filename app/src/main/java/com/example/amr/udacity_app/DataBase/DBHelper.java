@@ -53,7 +53,6 @@ public class DBHelper extends SQLiteOpenHelper {
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
         sqLiteDatabase.delete(mDBMovies.TableName, mDBMovies.Movie_Title + " = ?", new String[]{mainGridItem.getTitle()});
     }
-
     public ArrayList<MainGridItem> getAllData_in_Arraylist() {
 
         ArrayList<MainGridItem> array_list = new ArrayList<MainGridItem>();

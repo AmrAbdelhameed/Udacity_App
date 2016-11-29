@@ -146,7 +146,7 @@ public class MainFragment extends Fragment {
 
             HttpURLConnection urlConnection = null;
             BufferedReader reader = null;
-
+            getActivity().setTitle(choose);
             try {
                 URL url = new URL(built.toString());
                 Log.v(LOG_TAG, "built uri " + built.toString());

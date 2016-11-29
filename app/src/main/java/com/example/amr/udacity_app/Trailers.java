@@ -181,7 +181,7 @@ public class Trailers extends AppCompatActivity {
             if (TrailerList.isEmpty())
             {
                 finish();
-                Toast.makeText(Trailers.this, "Reviews is Empty", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Trailers.this, "Trailers is Empty", Toast.LENGTH_SHORT).show();
             }
 
         }
