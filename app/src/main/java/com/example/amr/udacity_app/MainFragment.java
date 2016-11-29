@@ -121,7 +121,7 @@ public class MainFragment extends Fragment {
                     item.setOverview(Overvieww);
                     item.setyear(Yearr);
                     item.setrating(Ratee);
-                    item.setImage("https://image.tmdb.org/t/p/w500/" + (jsonObject.getString("poster_path")));
+                    item.setImage("https://image.tmdb.org/t/p/w320/" + (jsonObject.getString("poster_path")));
                     item.setImage2("https://image.tmdb.org/t/p/w500/" + (jsonObject.getString("backdrop_path")));
 
                     mGridData.add(item);
@@ -146,7 +146,7 @@ public class MainFragment extends Fragment {
 
             HttpURLConnection urlConnection = null;
             BufferedReader reader = null;
-            getActivity().setTitle(choose);
+
             try {
                 URL url = new URL(built.toString());
                 Log.v(LOG_TAG, "built uri " + built.toString());
