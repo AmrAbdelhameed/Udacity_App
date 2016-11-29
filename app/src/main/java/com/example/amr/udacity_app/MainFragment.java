@@ -244,8 +244,18 @@ public class MainFragment extends Fragment {
             return true;
         }
         if (id == R.id.title_activity_favourite) {
-            Intent intent = new Intent(getActivity(), FavouriteActivity.class);
-            startActivity(intent);
+            if (null != getActivity().findViewById(R.id.flDetails)) {
+
+                Intent intent = new Intent(getActivity(), FavouriteActivity.class);
+                startActivity(intent);
+            }
+            else
+            {
+                getActivity().finish();
+                Intent intent = new Intent(getActivity(), FavouriteActivity.class);
+                startActivity(intent);
+            }
+
             return true;
         }
 

@@ -107,6 +107,7 @@ public class DetailFragment extends Fragment {
                                         startActivity(getActivity().getIntent());
                                     }
                                     else{
+                                        getActivity().finish();
                                         Intent i = new Intent(getActivity(),MainActivity.class);
                                         startActivity(i);
                                     }

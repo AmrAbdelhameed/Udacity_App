@@ -26,6 +26,7 @@ public class FavouriteActivity extends AppCompatActivity implements Favourite_Ta
     @Override
     public void setSelectedMovie(String Title, String ID, String Rate, String Year, String Overview, String Image1, String Image2) {
         if (!mIsTwoPane) {
+            finish();
             Intent intent = new Intent(this, DetailActivity.class);
             Bundle b = new Bundle();
             b.putString("mytitle", Title);
@@ -51,4 +52,6 @@ public class FavouriteActivity extends AppCompatActivity implements Favourite_Ta
             getSupportFragmentManager().beginTransaction().replace(R.id.flDetails, mDetailsFragment, "").commit();
         }
     }
+
+
 }
