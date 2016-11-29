@@ -1,0 +1,10 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:defaultValue="popular"
+        android:entries="@array/titles_of_list"
+        android:entryValues="@array/values_of_list"
+        android:key="example_list"
+        android:title="@string/title_as_message" />
+
+</PreferenceScreen>
