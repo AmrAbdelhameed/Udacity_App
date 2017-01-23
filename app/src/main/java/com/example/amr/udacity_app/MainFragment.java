@@ -251,7 +251,6 @@ public class MainFragment extends Fragment {
             }
             else
             {
-                getActivity().finish();
                 Intent intent = new Intent(getActivity(), FavouriteActivity.class);
                 startActivity(intent);
             }

@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.NavUtils;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -141,6 +140,7 @@ public class DetailFragment extends Fragment {
                 b.putString("mmid", ID);
                 i.putExtras(b);
                 startActivity(i);
+                //trailer
             }
         });
         buttonreview.setOnClickListener(new View.OnClickListener() {
@@ -181,7 +181,8 @@ public class DetailFragment extends Fragment {
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         if (id == android.R.id.home) {
-            NavUtils.navigateUpFromSameTask(getActivity());
+            getActivity().finish();
+           // NavUtils.navigateUpFromSameTask(getActivity());
             return true;
         }
         return super.onOptionsItemSelected(item);
