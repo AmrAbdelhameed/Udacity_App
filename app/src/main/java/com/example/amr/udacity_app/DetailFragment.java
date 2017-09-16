@@ -97,7 +97,7 @@ public class DetailFragment extends Fragment {
                             .setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int id) {
                                     dbHelper.deleterow(mainGridItem);
-                                    Toast.makeText(getActivity(), "Deleted Successfully", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getActivity(), "Deleted From Favourite Successfully", Toast.LENGTH_SHORT).show();
                                     buttonFavourite.setVisibility(View.INVISIBLE);
                                     buttontUnFavourite.setVisibility(View.VISIBLE);
                                     Bundle bundle = getArguments();
